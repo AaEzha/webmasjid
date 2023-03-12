@@ -22,7 +22,7 @@ Ada 2 (dua) cara untuk memasang sistem informasi masjid ini, yakni *Instalasi Ma
     `cd webmasjid`
 - Lalu instal aplikasi-aplikasi pendukung
     `composer install`
-- Saling file *.env*
+- Salin file *.env*
     `cp .env.example .env`
 - Atur kredensial *database* pada file *.env*
 - Buat key baru
@@ -31,6 +31,11 @@ Ada 2 (dua) cara untuk memasang sistem informasi masjid ini, yakni *Instalasi Ma
     `php artisan migrate --seed`
 - Mulai projek
     `php artisan serve`
+- Buka tab atau terminal baru
+    `npm install && npm run dev`
+  atau
+    `yarn && yarn dev`
+- Arahkan ke alamat `http://localhost:8000` di browser
 - Log in ke sistem
     `email : admin@webmasjid.org | password : bismillah`
 
