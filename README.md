@@ -1,65 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Tentang Web Masjid
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Web Masjid adalah sebuah perangkat lunak berbasis website yang diharapkan dapat menjadi *all in one solution* untuk pengelolaan informasi masjid. Web Masjid (*akan segera*) memiliki fitur-fitur di bawah ini:
 
-## About Laravel
+- Multi akses bertingkat, dari pengurus masjid hingga anggota.
+- Pengelolaan berita seputar kegiatan masjid.
+- Pendataan keluar/masuk keuangan masjid.
+- Jadwal imam sholat, muadzin, serta khotib.
+- *dan akan terus bertambah seiring waktu pengembangan*
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Web Masjid diharapkan menjadi pilihan utama para pengurus masjid sebagai salah satu cara memakmurkan masjidnya.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Instalasi Web Masjid
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Ada 2 (dua) cara untuk memasang sistem informasi masjid ini, yakni *Instalasi Manual* dan *Instalasi Awan*.
 
-## Learning Laravel
+## Instalasi Manual
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Sila *clone* repositori ini terlebih dahulu
+    `git clone https://github.com/webmasjid/webmasjid.git`
+- Masuk ke dalam direktori projek
+    `cd webmasjid`
+- Lalu instal aplikasi-aplikasi pendukung
+    `composer install`
+- Saling file *.env*
+    `cp .env.example .env`
+- Atur kredensial *database* pada file *.env*
+- Buat key baru
+    `php artisan key:generate`
+- Jalankan migrasi database
+    `php artisan migrate --seed`
+- Mulai projek
+    `php artisan serve`
+- Log in ke sistem
+    `email : admin@webmasjid.org | password : bismillah`
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Instalasi Awan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Untuk proses instalasi ini, Antum cukup kirim email permintaan kepada kami dan selanjutnya akan kami urus Web Masjid Antum hingga *online*.
 
-## Laravel Sponsors
+Fitur ini Antum akan dapat *subdomain* dari webmasjid.org atau dapat menggunakan *domain* pilihan sendiri.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Wakaf Web Masjid
 
-### Premium Partners
+Kami ucapkan banyak terima kasih atas kelapangan hatinya untuk menjadi waqif (orang yang berwakaf) dalam pendanaan projek Sistem Informasi Masjid ini.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Secara eksplisit, kami membutuhkan waqif untuk beberapa hal fundamental berikut:
+
+- Pembelian domain **webmasjid.org** seharga IDR 170.000,- untuk 1 tahun pertama.
+- Pembelian web hosting **webmasjid.org** seharga IDR 500.000,- untuk 1 tahun pertama.
+
+Harga dan spesifikasi tersebut diambil dari website [Dracoola.com](https://dracoola.com).
+
+Jika Antum berniat menjadi waqif, sila kirim surat elektronik (*e-mail*) ke [reza@nurfachmi.com](mailto:reza@nurfachmi.com) dengan subjek **Waqif Webmasjid**.
+
+### Waqif Premium
+
+- *belum ada*
+
+Tak lupa kami ucapkan banyak terima kasih kepada seluruh [waqif](https://github.com/webmasjid/webmasjid/WAQIF.md) yang berjasa pada projek Sistem Informasi Masjid ini.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Terima kasih untuk menyempatkan waktunya untuk beramal menjadi kontributor Sistem Informasi Masjid ini. Semoga menjadi amal jariyah untuk kita semua dan diterima oleh Allah sebagai hasanah.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Jika Antum menemukan *bug* yang berkaitan dengan keamanan, mohon kirimkan surat elektronik (*e-mail*) kepada Reza Nurfachmi via [reza@nurfachmi.com](mailto:reza@nurfachmi.com). Seluruh *bug* yang berkaitan dengan keamanan akan kami komunikasikan kepada [pihak semestinya](https://laravel.com).
 
 ## License
 
